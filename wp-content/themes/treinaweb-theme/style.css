@@ -16,3 +16,68 @@ body{
 .posts{
   margin-bottom: 1em;
 }
+
+.nav .current_page_item a{
+    background-color:#2B7CAC;  
+}
+
+.comentarios{
+    padding: 1em;
+    border: solid 1px #e2e2e2;
+}
+
+.comentarios form input[type=text], .comentarios form textarea{
+    width: 350px;
+}
+
+.commentlist { 
+    margin: 10px 0 30px 0;
+}
+
+.commentlist li { 
+    list-style: none;
+}
+
+.commentlist li ul { 
+    margin-left: 20px;
+}
+
+.commentlist li .comment-body { 
+    background: #F5F5F5; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-box-shadow: 0 0 8px #eee;
+    -webkit-box-shadow: 0 0 8px #eee;
+    box-shadow: 0 0 8px #eee;
+    border: solid 1px #e2e2e2;
+}
+
+.commentlist img { 
+    float: left; 
+    margin: 5px;
+}
+
+.commentlist p { 
+    clear: both; 
+    margin: 15px 0; 
+    color: #555;
+}
+
+.commentlist .reply { 
+    text-align: right;
+}
+
+.widget-lateral{
+    margin: 0;    
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.widget-lateral h2{
+    font-size: 1.2em;
+}
+
+.widget-lateral #searchform input[type=text]{
+    width: 170px;
+}

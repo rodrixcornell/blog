@@ -44,6 +44,11 @@
         <?php wp_list_categories('title_li=&number=8'); // Lista as categorias ?>
 
     </ul>
+
+    <ul class="widget-lateral">
+      <?php dynamic_sidebar('Widget Lateral'); ?>        
+    </ul>
+
     </div><!--/.well -->
 </div><!--/span-->
 

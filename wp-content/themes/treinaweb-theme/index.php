@@ -21,6 +21,8 @@
             </a>
         </p>
 
+        <?php the_post_thumbnail(); ?>
+
         <p><?php the_excerpt(); // Resumo do Post ?></p>
 
         <p class="muted">
@@ -36,7 +38,12 @@
 
     <!--/post -->    
     
-    <?php endwhile;endif; ?>
+    <?php endwhile; ?>
+    <?php else: ?>
+      <?php get_template_part('sem-resultado'); ?>
+    <?php endif; ?>
+
+    <?php pagination(); ?>
 
 </div><!--/span9-->
 

@@ -39,14 +39,16 @@
 
               <!-- Opções de Menu -->
 
-              <a href="#" class="brand">Blog TreinaWeb</a>
+              <a href="<?php bloginfo('url'); ?>" class="brand">Blog TreinaWeb</a>
               <div class="nav-collapse">
-                <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link3 </a></li>
-                </ul>
+                <?php
+                  wp_nav_menu(
+                      array(
+                      'menu' =>'menu_principal',
+                      'menu_class' => 'nav' )
+                  );
+                ?>
+
 
                 <!-- Formulário de pesquisa -->
 
@@ -77,7 +79,7 @@
 
       <!-- Topo -->
 
-      <div class="row-fluid">
+      <!--div class="row-fluid">
           <div class="hero-unit">
             <h1>
               Nome do Blog
@@ -85,6 +87,14 @@
             </h1>
             <p>Boas vindas</p>
           </div>
+      </div-->
+
+      <div class="row-fluid">
+        <div class="hero-unit">
+        <img src="http://img.static.treinaweb.com.br/treinaweb-cursos-online.png" alt="TreinaWeb Cursos" >             
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Seja bem vindo ao blog <b>TreinaWeb Cursos</b>!</p>
+        </div>
       </div>
+
 
       <div class="row-fluid">
